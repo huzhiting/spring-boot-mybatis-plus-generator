@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.model.Article">
+        <id column="id" property="id" />
+        <result column="cat_id" property="catId" />
+        <result column="code" property="code" />
+        <result column="title" property="title" />
+        <result column="child_title" property="childTitle" />
+        <result column="expend_title" property="expendTitle" />
+        <result column="keywords" property="keywords" />
+        <result column="description" property="description" />
+        <result column="author" property="author" />
+        <result column="ext_link" property="extLink" />
+        <result column="content" property="content" />
+        <result column="site" property="site" />
+        <result column="status" property="status" />
+        <result column="index" property="index" />
+        <result column="visits" property="visits" />
+        <result column="publish_time" property="publishTime" />
+        <result column="offline_time" property="offlineTime" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="create_by" property="createBy" />
+        <result column="update_by" property="updateBy" />
+    </resultMap>
+
+</mapper>
